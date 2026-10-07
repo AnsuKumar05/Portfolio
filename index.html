@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ansu Kumar R - Software Developer & Backend Specialist. Portfolio showcasing projects in C#, .NET, React.js, Python, PostgreSQL, and modern web applications.">
+    <meta name="keywords" content="Ansu Kumar R, Software Developer, Backend Developer, Web Application, .NET Developer, C#, ASP.NET Core, React.js, PostgreSQL, Portfolio">
+    <meta name="author" content="Ansu Kumar R">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Ansu Kumar R - Software Developer | Web Application">
+    <meta property="og:description" content="Software Developer with hands-on experience building and maintaining web applications using C#, .NET, JavaScript, React.js, and PostgreSQL.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="#">
+    <meta property="og:image" content="assets/profile-photo.jpeg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ansu Kumar R - Portfolio">
+    <meta name="twitter:description" content="Software Developer | Web Application | .NET & React.js">
+    <meta name="twitter:image" content="assets/profile-photo.jpeg">
+    
+    <title>Ansu Kumar R | Software Developer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1',
+                        secondary: '#8b5cf6',
+                        accent: '#06d6a0',
+                        darkBg: '#0a0a0f',
+                        darkCard: 'rgba(255, 255, 255, 0.035)'
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Devicon CSS for Technology Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ansu Kumar R",
+        "jobTitle": "Software Developer",
+        "description": "Software Developer with experience building and maintaining web applications using C#, .NET, JavaScript and React.js.",
+        "url": "#",
+        "sameAs": [
+            "https://linkedin.com/in/ansu-kumar-r",
+            "https://github.com/AnsuKumar05"
+        ],
+        "email": "ansukumar5207@gmail.com",
+        "telephone": "+91 81243 37117",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Erode",
+            "addressCountry": "India"
+        }
+    }
+    </script>
+</head>
+<body class="bg-[#0b0c10] text-white">
+
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <span class="brand-text"><span class="brand-name">Ansu’s</span> <span class="brand-highlight">Portfolio</span></span>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list fs-2 text-light"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto py-3 py-lg-0 align-items-center gap-lg-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="row align-items-center g-4 g-lg-5">
+                    <!-- Left: Bio & Actions (Text first on mobile & desktop) -->
+                    <div class="col-lg-7 order-1 order-lg-1">
+                        <div class="hero-content text-center text-lg-start">
+                            <div class="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-full status-pill mb-3">
+                                <span class="pulse-dot"></span>
+                                <span class="small font-medium text-slate-300">Software Developer &bull; Erode, India</span>
+                            </div>
+                            
+                            <h1 class="hero-title fw-bold mb-2 tracking-tight">
+                                Hi, I'm <span class="gradient-text">Ansu Kumar R</span>
+                            </h1>
+                            
+                            <h2 class="hero-subtitle mb-3" aria-label="Software Developer | Web Application">
+                                <span id="typedRole" class="typing-text">Software Developer | Web Application</span><span class="typing-cursor" aria-hidden="true">|</span>
+                            </h2>
+                            
+                            <p class="hero-description text-slate-300 mb-4">
+                                Software Developer with hands-on experience building and maintaining web applications using <strong class="text-white">C#, .NET, JavaScript, React.js</strong>, and relational databases. Focused on writing reliable code, developing clean APIs, and delivering practical solutions.
+                            </p>
+                            
+                            <div class="hero-buttons d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                                <a href="assets/resume.pdf" download="Ansu_Kumar_R_Resume.pdf" class="btn btn-primary d-inline-flex align-items-center">
+                                    <i class="bi bi-file-earmark-arrow-down-fill me-2"></i>Download Resume
+                                </a>
+                                <a href="#contact" class="btn btn-outline-light d-inline-flex align-items-center">
+                                    <i class="bi bi-chat-dots-fill me-2"></i>Contact Me
+                                </a>
+                                <a href="#projects" class="btn btn-glass d-inline-flex align-items-center">
+                                    <i class="bi bi-grid-fill me-2"></i>Key Projects
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right: Profile Photo (No floating badges, clean static display) -->
+                    <div class="col-lg-5 order-2 order-lg-2">
+                        <div class="profile-photo-container text-center">
+                            <div class="photo-frame">
+                                <img src="assets/profile-photo.jpeg" alt="Ansu Kumar R - Software Developer" class="profile-photo img-fluid shadow-lg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights Section -->
+        <section id="highlights" class="py-5 highlights-section">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="highlight-item h-100 p-4">
+                            <div class="highlight-icon-box mb-3">
+                                <i class="bi bi-gear-wide-connected text-indigo-400"></i>
+                            </div>
+                            <h5 class="highlight-title">Backend & APIs</h5>
+                            <p class="highlight-desc">
+                                .NET, ASP.NET Core, Web API, and REST APIs with secure authentication, authorization, and role-based access.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="highlight-item h-100 p-4">
+                            <div class="highlight-icon-box mb-3">
+                                <i class="bi bi-database-check text-violet-400"></i>
+                            </div>
+                            <h5 class="highlight-title">Databases & Architecture</h5>
+                            <p class="highlight-desc">
+                                PostgreSQL, MongoDB, and SQL with relational entity modeling, foreign keys, repositories, and data flow pipelines.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="highlight-item h-100 p-4">
+                            <div class="highlight-icon-box mb-3">
+                                <i class="bi bi-laptop text-emerald-400"></i>
+                            </div>
+                            <h5 class="highlight-title">Full-Stack Development</h5>
+                            <p class="highlight-desc">
+                                End-to-end integration combining C#, React.js, Python, and modern tools to deliver reliable software solutions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section / Professional Summary -->
+        <section id="about" class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="glass-card p-4 p-md-5">
+                            <div class="text-center mb-4">
+                                <span class="sub-heading-pill">Profile Overview</span>
+                                <h2 class="section-title mb-3">Professional Summary</h2>
+                            </div>
+                            <div class="summary-content">
+                                <p class="lead-summary text-slate-200 mb-4">
+                                    Software Developer with 3 months of hands-on experience building and maintaining web applications using <strong>C#, .NET, JavaScript and React.js</strong>. Experienced in developing application features, working with databases, debugging issues, and contributing to existing codebases. Strong understanding of software development fundamentals with a focus on writing reliable code and delivering practical solutions.
+                                </p>
+                                
+                                <div class="row g-3 pt-3">
+                                    <div class="col-6 col-md-3">
+                                        <div class="info-card p-3 text-center h-100">
+                                            <i class="bi bi-briefcase text-indigo-400 fs-3 mb-2"></i>
+                                            <div class="small text-slate-400">Role</div>
+                                            <div class="fw-semibold text-white">Software Developer</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-3">
+                                        <div class="info-card p-3 text-center h-100">
+                                            <i class="bi bi-code-square text-violet-400 fs-3 mb-2"></i>
+                                            <div class="small text-slate-400">Specialization</div>
+                                            <div class="fw-semibold text-white">Web Applications</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-3">
+                                        <div class="info-card p-3 text-center h-100">
+                                            <i class="bi bi-geo-alt text-emerald-400 fs-3 mb-2"></i>
+                                            <div class="small text-slate-400">Location</div>
+                                            <div class="fw-semibold text-white">Erode, India</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-3">
+                                        <div class="info-card p-3 text-center h-100">
+                                            <i class="bi bi-envelope-check text-cyan-400 fs-3 mb-2"></i>
+                                            <div class="small text-slate-400">Communication</div>
+                                            <div class="fw-semibold text-white">Direct Email</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="sub-heading-pill">Tech Stack</span>
+                    <h2 class="section-title mb-2">Technical Skills</h2>
+                    <p class="text-slate-400 max-w-lg mx-auto">Core programming languages, backend frameworks, databases, and development tools from my technical repertoire.</p>
+                </div>
+                
+                <div class="row g-4 justify-content-center">
+                    <!-- Programming Languages -->
+                    <div class="col-lg-6">
+                        <div class="glass-card skill-group-card p-4 h-100">
+                            <div class="d-flex align-items-center gap-3 mb-4 pb-2 border-b border-white/10">
+                                <div class="skill-category-icon text-indigo-400">
+                                    <i class="bi bi-code-slash"></i>
+                                </div>
+                                <div>
+                                    <h4 class="mb-0 fw-bold fs-5 text-white">Programming Languages</h4>
+                                    <span class="text-xs text-slate-400">Core languages & frameworks</span>
+                                </div>
+                            </div>
+                            <div class="skills-grid">
+                                <div class="skill-badge-item">
+                                    <i class="devicon-csharp-plain text-purple-400"></i>
+                                    <span>C#</span>
+                                </div>
+                                <div class="skill-badge-item">
+                                    <i class="devicon-python-plain text-yellow-400"></i>
+                                    <span>Python</span>
+                                </div>
+                                <div class="skill-badge-item">
+                                    <i class="devicon-java-plain text-red-400"></i>
+                                    <span>Java</span>
+                                </div>
+                                <div class="skill-badge-item">
+                                    <i class="devicon-javascript-plain text-amber-300"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="skill-badge-item">
+                                    <i class="devicon-react-original text-cyan-400"></i>
+                                    <span>React.js</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="col-lg-6">
+                        <div class="glass-card skill-group-card p-4 h-100">
+                            <div class="d-flex align-items-center gap-3 mb-4 pb-2 border-b border-white/10">
+                                <div class="skill-category-icon text-violet-400">
+                                    <i class="bi bi-hdd-network"></i>
+                                </div>
+                                <div>
+                                    <h4 class="mb-0 fw-bold fs-5 text-white">Backend</h4>
+                                    <span class="text-xs text-slate-400">Web architectures & APIs</span>
+                                </div>
+                            </div>
+                            <div class="skills-grid">
+                                <div class="skill-badge-item">
+                                    <i class="devicon-dot-net-plain text-indigo-400"></i>
+                                    <span>.NET</span>
+                                </div>
+                                <div class="skill-badge-item">
+                                    <i class="devicon-dotnetcore-plain text-purple-400"></i>
+                                    <span>ASP.NET Core</span>
+                                </div>
+                                <div class="skill-badge-item">
+                                    <i class="bi bi-cloud-arrow-up-fill text-blue-400"></i>
+                                    <span>Web API</span>
+                                </div>
+                                <div class="skill-badge-item">
+                                    <i class="bi bi-arrow-left-right text-emerald-400"></i>
+                                    <span>REST APIs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database -->
+                    <div class="col-lg-6">
+                        <div class="glass-card skill-group-card p-4 h-100">
+                            <div class="d-flex align-items-center gap-3 mb-4 pb-2 border-b border-white/10">
+                                <div class="skill-category-icon text-emerald-400">
+                                    <i class="bi bi-database"></i>
+                                </div>
+                                <div>
+                                    <h4 class="mb-0 fw-bold fs-5 text-white">Database</h4>
+                                    <span class="text-xs text-slate-400">Relational & NoSQL storage</span>
+                                </div>
+                            </div>
+                            <div class="skills-grid">
+                                <div class="skill-badge-item">
+                                    <i class="devicon-postgresql-plain text-sky-400"></i>
+                                    <span>PostgreSQL</span>
+                                </div>
+                                <div class="skill-badge-item">
+                                    <i class="devicon-mongodb-plain text-green-500"></i>
+                                    <span>MongoDB</span>
+                                </div>
+                                <div class="skill-badge-item">
+                                    <i class="bi bi-database-fill-gear text-indigo-300"></i>
+                                    <span>SQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Platforms -->
+                    <div class="col-lg-6">
+                        <div class="glass-card skill-group-card p-4 h-100">
+                            <div class="d-flex align-items-center gap-3 mb-4 pb-2 border-b border-white/10">
+                                <div class="skill-category-icon text-cyan-400">
+                                    <i class="bi bi-tools"></i>
+                                </div>
+                                <div>
+                                    <h4 class="mb-0 fw-bold fs-5 text-white">Tools & Platforms</h4>
+                                    <span class="text-xs text-slate-400">Development, testing & deployment</span>
+                                </div>
+                            </div>
+                            <div class="skills-grid">
+                                <div class="skill-badge-item">
+                                    <i class="devicon-git-plain text-orange-400"></i>
+                                    <span>Git</span>
+                                </div>
+                                <div class="skill-badge-item">
+                                    <i class="devicon-github-original text-white"></i>
+                                    <span>GitHub</span>
+                                </div>
+                                <div class="skill-badge-item">
+                                    <i class="devicon-visualstudio-plain text-purple-400"></i>
+                                    <span>Visual Studio</span>
+                                </div>
+                                <div class="skill-badge-item">
+                                    <i class="devicon-vscode-plain text-blue-400"></i>
+                                    <span>Visual Studio Code</span>
+                                </div>
+                                <div class="skill-badge-item">
+                                    <i class="devicon-postman-plain text-orange-500"></i>
+                                    <span>Postman</span>
+                                </div>
+                                <div class="skill-badge-item">
+                                    <i class="devicon-swagger-plain text-green-400"></i>
+                                    <span>Swagger</span>
+                                </div>
+                                <div class="skill-badge-item">
+                                    <i class="bi bi-cloud-check-fill text-teal-300"></i>
+                                    <span>Render</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section id="experience" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="sub-heading-pill">Work History</span>
+                    <h2 class="section-title mb-2">Professional Experience</h2>
+                    <p class="text-slate-400 max-w-lg mx-auto">Hands-on software development and engineering contributions.</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="glass-card experience-card p-4 p-md-5">
+                            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3 mb-4 pb-3 border-b border-white/10">
+                                <div>
+                                    <div class="d-flex align-items-center gap-2 mb-1">
+                                        <span class="badge bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 px-2.5 py-1 rounded-md text-xs font-semibold">Current Role</span>
+                                        <span class="badge bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2.5 py-1 rounded-md text-xs font-semibold">Full-Time</span>
+                                    </div>
+                                    <h3 class="fw-bold text-white fs-4 mb-1">Software Developer</h3>
+                                    <h5 class="company-name text-indigo-400 fw-semibold mb-0">
+                                        <i class="bi bi-building me-1.5"></i>NavaNala Technologies Private Limited
+                                    </h5>
+                                </div>
+                                <div class="experience-period">
+                                    <span class="period-badge">
+                                        <i class="bi bi-calendar3 me-1.5"></i>August 2026 – Present
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="experience-details">
+                                <h6 class="text-slate-300 text-uppercase tracking-wider text-xs font-bold mb-3">Key Responsibilities & Deliverables</h6>
+                                <ul class="experience-bullets list-unstyled">
+                                    <li class="d-flex align-items-start gap-3 mb-3">
+                                        <div class="bullet-check text-indigo-400 mt-1">
+                                            <i class="bi bi-check2-circle fs-5"></i>
+                                        </div>
+                                        <span class="text-slate-300">
+                                            Developed and maintained application features based on project requirements.
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-3 mb-3">
+                                        <div class="bullet-check text-indigo-400 mt-1">
+                                            <i class="bi bi-check2-circle fs-5"></i>
+                                        </div>
+                                        <span class="text-slate-300">
+                                            Implemented new functionality and enhanced existing modules across the application.
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-3 mb-3">
+                                        <div class="bullet-check text-indigo-400 mt-1">
+                                            <i class="bi bi-check2-circle fs-5"></i>
+                                        </div>
+                                        <span class="text-slate-300">
+                                            Developed and integrated APIs to support application features and data flow.
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-3 mb-3">
+                                        <div class="bullet-check text-indigo-400 mt-1">
+                                            <i class="bi bi-check2-circle fs-5"></i>
+                                        </div>
+                                        <span class="text-slate-300">
+                                            Worked on frontend functionality and connected user-facing features with backend services.
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-3 mb-3">
+                                        <div class="bullet-check text-indigo-400 mt-1">
+                                            <i class="bi bi-check2-circle fs-5"></i>
+                                        </div>
+                                        <span class="text-slate-300">
+                                            Implemented authentication, authorization, and role-based access for different application users.
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-3 mb-3">
+                                        <div class="bullet-check text-indigo-400 mt-1">
+                                            <i class="bi bi-check2-circle fs-5"></i>
+                                        </div>
+                                        <span class="text-slate-300">
+                                            Debugged issues, tested implemented features, and fixed functionality based on development requirements.
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-3 mb-1">
+                                        <div class="bullet-check text-indigo-400 mt-1">
+                                            <i class="bi bi-check2-circle fs-5"></i>
+                                        </div>
+                                        <span class="text-slate-300">
+                                            Collaborated with the development team to understand requirements and deliver assigned features.
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Projects Section -->
+        <section id="projects" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="sub-heading-pill">Portfolio Work</span>
+                    <h2 class="section-title mb-2">Key Projects</h2>
+                    <p class="text-slate-400 max-w-lg mx-auto">Production-grade web applications and systems built with C#, .NET, React, Python, and PostgreSQL.</p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Project 1: Vendor Management System -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="glass-card project-card h-100 d-flex flex-column p-4">
+                            <div class="project-header mb-3">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <span class="badge project-category-badge">Web Application</span>
+                                    <div class="project-icon-badge text-indigo-400">
+                                        <i class="bi bi-shop-window fs-4"></i>
+                                    </div>
+                                </div>
+                                <h4 class="card-title text-white fw-bold mb-2 fs-5">
+                                    Vendor Management System
+                                </h4>
+                                <div class="tech-stack-inline text-indigo-300 text-xs font-semibold">
+                                    C# &bull; React &bull; PostgreSQL
+                                </div>
+                            </div>
+
+                            <div class="project-bullets-container mb-4 flex-grow-1">
+                                <ul class="list-unstyled project-bullets text-slate-300 small mb-0">
+                                    <li class="mb-2 d-flex align-items-start gap-2">
+                                        <i class="bi bi-arrow-right-short text-indigo-400 fs-5 lh-1 mt-0.5"></i>
+                                        <span>Developed and maintained backend functionality for vendor management.</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-start gap-2">
+                                        <i class="bi bi-arrow-right-short text-indigo-400 fs-5 lh-1 mt-0.5"></i>
+                                        <span>Implemented APIs and database integration for vendor-related operations.</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-start gap-2">
+                                        <i class="bi bi-arrow-right-short text-indigo-400 fs-5 lh-1 mt-0.5"></i>
+                                        <span>Worked with entity relationships, foreign keys, and data models for domestic and overseas vendors.</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-2">
+                                        <i class="bi bi-arrow-right-short text-indigo-400 fs-5 lh-1 mt-0.5"></i>
+                                        <span>Integrated backend APIs with the existing frontend based on project requirements.</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="project-footer pt-3 border-t border-white/10">
+                                <div class="tech-badges">
+                                    <span class="tech-badge"><i class="devicon-csharp-plain me-1"></i>C#</span>
+                                    <span class="tech-badge"><i class="devicon-react-original me-1"></i>React</span>
+                                    <span class="tech-badge"><i class="devicon-postgresql-plain me-1"></i>PostgreSQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Task Management System -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="glass-card project-card h-100 d-flex flex-column p-4">
+                            <div class="project-header mb-3">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <span class="badge project-category-badge">Web Application</span>
+                                    <div class="project-icon-badge text-violet-400">
+                                        <i class="bi bi-check2-square fs-4"></i>
+                                    </div>
+                                </div>
+                                <h4 class="card-title text-white fw-bold mb-2 fs-5">
+                                    Task Management System
+                                </h4>
+                                <div class="tech-stack-inline text-violet-300 text-xs font-semibold">
+                                    C# &bull; React &bull; PostgreSQL
+                                </div>
+                            </div>
+
+                            <div class="project-bullets-container mb-4 flex-grow-1">
+                                <ul class="list-unstyled project-bullets text-slate-300 small mb-0">
+                                    <li class="mb-2 d-flex align-items-start gap-2">
+                                        <i class="bi bi-arrow-right-short text-violet-400 fs-5 lh-1 mt-0.5"></i>
+                                        <span>Implemented Create, Read, Update, and Delete (CRUD) operations.</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-start gap-2">
+                                        <i class="bi bi-arrow-right-short text-violet-400 fs-5 lh-1 mt-0.5"></i>
+                                        <span>Created API endpoints, models, repositories, and services for managing application data.</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-2">
+                                        <i class="bi bi-arrow-right-short text-violet-400 fs-5 lh-1 mt-0.5"></i>
+                                        <span>Integrated APIs with the database and tested functionality using API testing tools.</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="project-footer pt-3 border-t border-white/10">
+                                <div class="tech-badges">
+                                    <span class="tech-badge"><i class="devicon-csharp-plain me-1"></i>C#</span>
+                                    <span class="tech-badge"><i class="devicon-react-original me-1"></i>React</span>
+                                    <span class="tech-badge"><i class="devicon-postgresql-plain me-1"></i>PostgreSQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: AI Stock Mind -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="glass-card project-card h-100 d-flex flex-column p-4">
+                            <div class="project-header mb-3">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <span class="badge project-category-badge bg-emerald-500/20 text-emerald-300 border-emerald-500/30">Prediction Platform</span>
+                                    <div class="project-icon-badge text-emerald-400">
+                                        <i class="bi bi-graph-up-arrow fs-4"></i>
+                                    </div>
+                                </div>
+                                <h4 class="card-title text-white fw-bold mb-2 fs-5">
+                                    AI Stock Mind
+                                </h4>
+                                <div class="tech-stack-inline text-emerald-300 text-xs font-semibold">
+                                    Python &bull; React &bull; MongoDB
+                                </div>
+                            </div>
+
+                            <div class="project-bullets-container mb-4 flex-grow-1">
+                                <ul class="list-unstyled project-bullets text-slate-300 small mb-0">
+                                    <li class="mb-2 d-flex align-items-start gap-2">
+                                        <i class="bi bi-arrow-right-short text-emerald-400 fs-5 lh-1 mt-0.5"></i>
+                                        <span>Developed a platform for stock price prediction and forecasting.</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-start gap-2">
+                                        <i class="bi bi-arrow-right-short text-emerald-400 fs-5 lh-1 mt-0.5"></i>
+                                        <span>Created a user-friendly dashboard for uploading and viewing stock data.</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-2">
+                                        <i class="bi bi-arrow-right-short text-emerald-400 fs-5 lh-1 mt-0.5"></i>
+                                        <span>Added API integration for tracking stock trends and presenting prediction results.</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="project-footer pt-3 border-t border-white/10">
+                                <div class="tech-badges">
+                                    <span class="tech-badge"><i class="devicon-python-plain me-1"></i>Python</span>
+                                    <span class="tech-badge"><i class="devicon-react-original me-1"></i>React</span>
+                                    <span class="tech-badge"><i class="devicon-mongodb-plain me-1"></i>MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="sub-heading-pill">Academic Background</span>
+                    <h2 class="section-title mb-2">Education</h2>
+                    <p class="text-slate-400 max-w-lg mx-auto">Formal qualifications and academic milestones in Computer Engineering.</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="timeline-container">
+                            <!-- Degree Education -->
+                            <div class="timeline-item mb-4">
+                                <div class="timeline-dot">
+                                    <i class="bi bi-mortarboard-fill"></i>
+                                </div>
+                                <div class="glass-card timeline-card p-4">
+                                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2 mb-2">
+                                        <div>
+                                            <span class="badge bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 text-xs px-2.5 py-1 rounded-md mb-2 d-inline-block">Undergraduate Degree</span>
+                                            <h4 class="text-white fw-bold fs-5 mb-1">B.E. in Computer Engineering</h4>
+                                            <h6 class="text-indigo-400 fw-semibold mb-0">Vidyaa Vikas College of Engineering and Technology</h6>
+                                        </div>
+                                        <div class="text-md-end">
+                                            <span class="period-badge">2026 – 2029 (Present)</span>
+                                        </div>
+                                    </div>
+                                    <p class="text-slate-300 small mb-0 mt-3 pt-2 border-t border-white/10">
+                                        <i class="bi bi-check-circle text-emerald-400 me-2"></i>Focused on core computer science, software engineering principles, algorithms, and distributed computing systems.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Diploma Education -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot">
+                                    <i class="bi bi-award-fill"></i>
+                                </div>
+                                <div class="glass-card timeline-card p-4">
+                                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2 mb-2">
+                                        <div>
+                                            <span class="badge bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs px-2.5 py-1 rounded-md mb-2 d-inline-block">Diploma Program</span>
+                                            <h4 class="text-white fw-bold fs-5 mb-1">Diploma in Computer Engineering</h4>
+                                            <h6 class="text-emerald-400 fw-semibold mb-0">K.S. Rangasamy Institute of Technology</h6>
+                                        </div>
+                                        <div class="text-md-end d-flex flex-md-column gap-2 align-items-start align-items-md-end">
+                                            <span class="period-badge">2023 – 2026</span>
+                                            <span class="badge bg-emerald-600 text-white font-bold px-3 py-1.5 rounded-full text-xs shadow-md">
+                                                CGPA: 9.84
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p class="text-slate-300 small mb-0 mt-3 pt-2 border-t border-white/10">
+                                        <i class="bi bi-check-circle text-emerald-400 me-2"></i>Strong academic performance with foundational mastery of programming, data structures, and computer architectures.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="sub-heading-pill">Credentials</span>
+                    <h2 class="section-title mb-2">Certifications</h2>
+                    <p class="text-slate-400 max-w-lg mx-auto">Professional certifications and verified industry internships.</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="glass-card certification-card p-4 p-md-5">
+                            <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center gap-4">
+                                <div class="cert-icon-wrapper text-indigo-400">
+                                    <i class="bi bi-patch-check-fill fs-1"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <span class="badge bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 text-xs px-2.5 py-1 rounded-md mb-2 d-inline-block">
+                                        Verified Internship Certificate
+                                    </span>
+                                    <h4 class="text-white fw-bold fs-5 mb-1">Software Development Internship</h4>
+                                    <h6 class="text-indigo-400 fw-semibold mb-2">Cognifyz Technologies</h6>
+                                    <p class="text-slate-300 small mb-0">
+                                        Completed hands-on software development internship focusing on practical engineering tasks, software fundamentals, and project execution.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="sub-heading-pill">Get In Touch</span>
+                    <h2 class="section-title mb-2">Contact Me</h2>
+                    <p class="text-slate-400 max-w-lg mx-auto">Feel free to reach out for software development opportunities, collaborations, or inquiries.</p>
+                </div>
+
+                <div class="row justify-content-center g-4">
+                    <div class="col-lg-5">
+                        <div class="glass-card p-4 p-md-5 h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <h4 class="text-white fw-bold fs-5 mb-4">Contact Information</h4>
+                                <div class="contact-list d-flex flex-column gap-3">
+                                    <a href="mailto:ansukumar5207@gmail.com" class="contact-link-card">
+                                        <div class="contact-icon text-indigo-400">
+                                            <i class="bi bi-envelope-at-fill fs-4"></i>
+                                        </div>
+                                        <div>
+                                            <div class="text-xs text-slate-400">Email Address</div>
+                                            <div class="contact-text text-white fw-semibold">ansukumar5207@gmail.com</div>
+                                        </div>
+                                    </a>
+
+                                    <a href="tel:+918124337117" class="contact-link-card">
+                                        <div class="contact-icon text-emerald-400">
+                                            <i class="bi bi-telephone-fill fs-4"></i>
+                                        </div>
+                                        <div>
+                                            <div class="text-xs text-slate-400">Phone Number</div>
+                                            <div class="contact-text text-white fw-semibold">+91 81243 37117</div>
+                                        </div>
+                                    </a>
+
+                                    <div class="contact-link-card">
+                                        <div class="contact-icon text-violet-400">
+                                            <i class="bi bi-geo-alt-fill fs-4"></i>
+                                        </div>
+                                        <div>
+                                            <div class="text-xs text-slate-400">Location</div>
+                                            <div class="contact-text text-white fw-semibold">Erode, India</div>
+                                        </div>
+                                    </div>
+
+                                    <a href="https://linkedin.com/in/ansu-kumar-r" target="_blank" rel="noopener noreferrer" class="contact-link-card">
+                                        <div class="contact-icon text-blue-400">
+                                            <i class="bi bi-linkedin fs-4"></i>
+                                        </div>
+                                        <div>
+                                            <div class="text-xs text-slate-400">LinkedIn Profile</div>
+                                            <div class="contact-text text-white fw-semibold">linkedin.com/in/ansu-kumar-r</div>
+                                        </div>
+                                    </a>
+
+                                    <a href="https://github.com/AnsuKumar05" target="_blank" rel="noopener noreferrer" class="contact-link-card">
+                                        <div class="contact-icon text-slate-200">
+                                            <i class="bi bi-github fs-4"></i>
+                                        </div>
+                                        <div>
+                                            <div class="text-xs text-slate-400">GitHub Profile</div>
+                                            <div class="contact-text text-white fw-semibold">github.com/AnsuKumar05</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="glass-card p-4 h-100">
+                            <h4 class="text-white fw-bold fs-5 mb-3">Send a Message</h4>
+                            <form id="contactForm">
+                                <div class="row g-2 g-md-3">
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-2">
+                                            <label for="name" class="form-label text-slate-300 small fw-medium mb-1">Your Name</label>
+                                            <input type="text" class="form-control custom-input" id="name" name="name" placeholder="Enter your name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-2">
+                                            <label for="email" class="form-label text-slate-300 small fw-medium mb-1">Your Email</label>
+                                            <input type="email" class="form-control custom-input" id="email" name="email" placeholder="Enter your email" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group mb-2">
+                                            <label for="subject" class="form-label text-slate-300 small fw-medium mb-1">Subject</label>
+                                            <input type="text" class="form-control custom-input" id="subject" name="subject" placeholder="Enter subject" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group mb-3">
+                                            <label for="message" class="form-label text-slate-300 small fw-medium mb-1">Message</label>
+                                            <textarea class="form-control custom-input" id="message" name="message" rows="3" placeholder="Write your message here..." required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary w-100 py-2.5 d-inline-flex align-items-center justify-content-center font-semibold">
+                                            <i class="bi bi-send-fill me-2"></i>Send Message via Email
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer py-4 border-t border-white/10">
+        <div class="container">
+            <div class="row align-items-center gy-2">
+                <div class="col-md-6 text-center text-md-start">
+                    <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2">
+                        <span class="brand-text" style="font-size: 1.05rem;"><span class="brand-name">Ansu’s</span> <span class="brand-highlight">Portfolio</span></span>
+                        <span class="text-slate-500 small">&bull; Software Developer</span>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="text-slate-400 small mb-0">&copy; <span id="currentYear"></span> Ansu Kumar R. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Back to Top Button -->
+    <button id="backToTop" aria-label="Back to top">
+        <i class="bi bi-arrow-up-short"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
